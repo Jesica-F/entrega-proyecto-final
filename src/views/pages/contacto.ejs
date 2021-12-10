@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("../parcials/head.ejs")%>
+        <title>Contacto</title>
+</head>
+
+<body>
+    <%-include("../parcials/nav.ejs")%>
+        <div class="contenedor1">
+            <img class="logo2" src="./img/logo-UTNBA-PNC-2016-2019-e1570223041254.png" alt="">
+        </div>
+        <div class="page">
+
+            <div class="formulario">
+
+                <form method="POST" action="/contacto">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <br>
+                    <label for="email ">Correo electrónico:</label>
+                    <input type="email " placeholder="correo@ejemplo.com " name="correo">
+                    <br>
+                    <label for="telefono ">Teléfono:</label>
+                    <input type="number " id="telefono" name="telefono">
+                    <br>
+
+
+                    <label for="cursos">Elija el curso de interés:</label>
+                    <select name="curso " id="curso " class="select">
+            <option value="" disabled selected>Seleccione</option>
+            <option value="electricistaDomiciliario ">Electricista domiciliario</option>
+            <option value="instaladorElectricista">Instalador Electricista</option>
+            <option value="electricidadIndustrial ">Electricidad Industrial</option>
+            <option value="herreria ">Herrería</option>
+            <option value="organizacionDeObra ">Organización de obra</option>
+            <option value="electronica">Electrónica básica y Reparación de plaquetas</option>
+                </select>
+
+                    <div class="comentario"> <textarea class="text" id="" placeholder="Comentarios..." name="comentarios"></textarea></div>
+
+
+
+                    <div class="enviar">
+                        <a href="" class=""></a><input class="boton" type="submit" value="Enviar ">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        <%-include("../parcials/footer.ejs")%>
+            <%-include("../parcials/scrips.ejs")%>
+
+</body>
+
+</html>

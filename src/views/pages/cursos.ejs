@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("../parcials/head.ejs")%>
+        <title>Cursos</title>
+</head>
+
+<body>
+    <%-include("../parcials/nav.ejs")%>
+
+        <main class="contenedor">
+            <% data.forEach((curso)=>{%>
+                <div class="hijo uno">
+                    <a href="#"> <img src="<%=curso.imagen%>" alt="<%= curso.curso%>" class="foto uno"></a>
+                    <h2 class="nombreCurso">
+                        <%= curso.curso%>
+                    </h2>
+                </div>
+
+                <% }) %>
+        </main>
+
+        <%-include("../parcials/footer.ejs")%>
+            <%-include("../parcials/scrips.ejs")%>
+</body>
+
+</html>
